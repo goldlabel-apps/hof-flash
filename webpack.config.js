@@ -10,6 +10,21 @@ module.exports = (webpackConfigEnv, argv) => {
   });
 
   return merge(defaultConfig, {
-    // modify the webpack config however you'd like to by adding to this object
+    output: {
+      library: {
+        type: "system",
+      },
+    },
+    externals: [
+      "single-spa",
+      "gsap",
+      "react",
+      "react-dom",
+      "react-draggable",
+      "react-redux",
+      "@reduxjs/toolkit",
+      "@mui/material",
+      "@listingslab/shared",
+    ],
   });
 };
