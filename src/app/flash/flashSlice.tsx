@@ -1,4 +1,4 @@
-// @ts-nocheck
+// @ts-ignore
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 export interface AnimationState {
