@@ -8,7 +8,6 @@ import { Provider } from "react-redux";
 // import { UI } from "./";
 
 export default function Flash() {
-  
   // React.useEffect(() => {
   //   console.warn("Viewer isMounted");
   // }, []);
@@ -19,9 +18,7 @@ export default function Flash() {
 
   return (
     <Provider store={shared.store}>
-      <ThemeProvider theme={theme}>
-      Flash
-      </ThemeProvider>
+      <ThemeProvider theme={theme}>Flash</ThemeProvider>
     </Provider>
   );
 }

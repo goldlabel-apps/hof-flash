@@ -1,18 +1,18 @@
 import {
   initViewerClip,
-  // initFilebrowserClip,
   initPersonaClip,
 } from "./initClips";
 import { onWindowResize } from "./onWindowResize";
 import { animateTo } from "./animateTo";
 import { remove } from "./remove";
 import { getSizes } from "./getSizes";
-
-import { getElement, setPosition, fadeIn, fadeOut } from "./utils";
+import { fadeOut } from "./fadeOut";
+import { fadeIn } from "./fadeIn";
+import { getElement  } from "./getElement";
+import { setPosition  } from "./setPosition";
 
 export {
   initPersonaClip,
-  // initFilebrowserClip,
   initViewerClip,
   getElement,
   setPosition,

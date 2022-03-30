@@ -1,6 +1,7 @@
 // @ts-ignore
 import { gsap, Bounce } from "gsap";
 import { getElement, getSizes } from "./";
+
 const duration = 1.66;
 
 export const animateTo = (divId, position, offset) => {

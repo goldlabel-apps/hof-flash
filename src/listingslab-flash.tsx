@@ -20,8 +20,4 @@ const dashd = () => {
   return;
 };
 
-
-export {
-  Flash,
-  dashd,
-}
+export { Flash, dashd };
