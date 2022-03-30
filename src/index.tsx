@@ -4,10 +4,24 @@ import {
   animateTo,
   getSizes,
   getElement,
+  initPersonaClip,
+  initViewerClip,
+  setPosition,
+  fadeIn,
+  fadeOut,
+  remove,
 } from "./ActionScript";
 
-// Movieclips
 export { PinpongballClip, Sky };
-
-// ActionScript
-export { onWindowResize, animateTo, getSizes, getElement };
+export {
+  onWindowResize,
+  animateTo,
+  getSizes,
+  getElement,
+  initPersonaClip,
+  initViewerClip,
+  setPosition,
+  fadeIn,
+  fadeOut,
+  remove,
+};

@@ -14,10 +14,3 @@ const lifecycles = singleSpaReact({
 });
 
 export const { bootstrap, mount, unmount } = lifecycles;
-
-const dashd = () => {
-  console.warn("dashd");
-  return;
-};
-
-export { Flash, dashd };
