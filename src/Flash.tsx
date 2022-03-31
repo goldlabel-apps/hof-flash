@@ -5,7 +5,7 @@ import * as shared from "@listingslab/shared";
 import { createTheme, ThemeProvider, Box } from "@mui/material";
 // @ts-ignore
 import { Provider } from "react-redux";
-// import { UI } from "./";
+import { Stage } from "./";
 
 export default function Flash() {
   // React.useEffect(() => {
@@ -18,7 +18,9 @@ export default function Flash() {
 
   return (
     <Provider store={shared.store}>
-      <ThemeProvider theme={theme}>Flash</ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <Stage />
+      </ThemeProvider>
     </Provider>
   );
 }

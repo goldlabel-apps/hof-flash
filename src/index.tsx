@@ -1,4 +1,8 @@
-import { PinpongballClip, Sky } from "./MovieClips";
+import Stage from "./Stage";
+import { 
+  PinpongballClip, 
+  Sky,
+} from "./MovieClips";
 import {
   onWindowResize,
   animateTo,
@@ -12,8 +16,10 @@ import {
   remove,
 } from "./ActionScript";
 
-export { PinpongballClip, Sky };
 export {
+  Stage,
+  PinpongballClip, 
+  Sky,
   onWindowResize,
   animateTo,
   getSizes,
