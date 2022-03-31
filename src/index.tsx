@@ -1,8 +1,5 @@
 import Stage from "./Stage";
-import { 
-  PinpongballClip, 
-  Sky,
-} from "./MovieClips";
+import { PinpongballClip, Sky } from "./MovieClips";
 import {
   onWindowResize,
   animateTo,
@@ -18,7 +15,7 @@ import {
 
 export {
   Stage,
-  PinpongballClip, 
+  PinpongballClip,
   Sky,
   onWindowResize,
   animateTo,

@@ -1,7 +1,6 @@
 import React from "react";
 
 const Sky = (props) => {
-
   return (
     <React.Fragment>
       <svg {...props} viewBox="0 0 450 1000">
