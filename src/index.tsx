@@ -1,4 +1,5 @@
 import Stage from "./Stage";
+import { initFlash } from "./events";
 import { PinpongballClip, Sky } from "./MovieClips";
 import {
   onWindowResize,
@@ -14,6 +15,7 @@ import {
 } from "./ActionScript";
 
 export {
+  initFlash,
   Stage,
   PinpongballClip,
   Sky,
