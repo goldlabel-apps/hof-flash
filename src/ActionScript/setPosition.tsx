@@ -1,3 +1,5 @@
+// topleft, topmiddle, topright, centered,
+// bottomleft, bottommiddle, bottomright
 // @ts-ignore
 import { gsap, Power1 } from "gsap";
 import { getElement, getSizes } from "./";

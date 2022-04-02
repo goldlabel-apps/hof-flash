@@ -16,24 +16,24 @@ export default function Stage() {
   if (!stage) return null;
   const { stageW, stageH } = stage;
 
-  return (
-    <React.Fragment>
-      <Box
-        id="skyClip"
-        sx={{
-          opacity: 1,
-          zIndex: 10,
-          position: "absolute",
-          width: stageW,
-          height: stageH,
-        }}
-      >
-        <Sky />
-      </Box>
-    </React.Fragment>
-  );
+  return <React.Fragment></React.Fragment>;
 }
 
 /*
+
+<Box
+  id="skyClip"
+  sx={{
+    opacity: 1,
+    zIndex: 10,
+    position: "absolute",
+    width: stageW,
+    height: stageH,
+  }}
+>
+  <Sky />
+</Box>
+
+
 <pre>{JSON.stringify(flash, null, 2)}</pre>
 */

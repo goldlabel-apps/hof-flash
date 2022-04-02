@@ -1,14 +1,14 @@
 import Stage from "./Stage";
-import { initFlash } from "./events";
+import { initFlash, onWindowResize } from "./events";
 import { PinpongballClip, Sky } from "./MovieClips";
 import {
-  onWindowResize,
   animateTo,
   getSizes,
   getElement,
   initPersonaClip,
   initViewerClip,
   setPosition,
+  spreadOut,
   fadeIn,
   fadeOut,
   remove,
@@ -21,6 +21,7 @@ export {
   Sky,
   onWindowResize,
   animateTo,
+  spreadOut,
   getSizes,
   getElement,
   initPersonaClip,

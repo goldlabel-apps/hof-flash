@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import singleSpaReact from "single-spa-react";
 import Flash from "./Flash";
 
-import { initFlash } from "./events";
+import { initFlash, onWindowResize } from "./events";
 
 const lifecycles = singleSpaReact({
   React,
@@ -17,4 +17,4 @@ const lifecycles = singleSpaReact({
 
 export const { bootstrap, mount, unmount } = lifecycles;
 
-export { initFlash };
+export { initFlash, onWindowResize };
