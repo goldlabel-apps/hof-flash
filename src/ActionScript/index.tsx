@@ -1,4 +1,3 @@
-import { initViewerClip, initPersonaClip } from "./initClips";
 import { animateTo } from "./animateTo";
 import { remove } from "./remove";
 import { getSizes } from "./getSizes";
@@ -9,8 +8,6 @@ import { setPosition } from "./setPosition";
 import { spreadOut } from "./spreadOut";
 
 export {
-  initPersonaClip,
-  initViewerClip,
   getElement,
   setPosition,
   getSizes,

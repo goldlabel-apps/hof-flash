@@ -1,13 +1,24 @@
+// @ts-ignore
+import { gsap, Power1 } from "gsap";
 import { getElement } from "./";
+
+const duration = 1.66;
 
 export const fadeOut = (divId: string) => {
   try {
     const el = getElement(divId);
     if (!el) {
-      console.warn("fadeOut fail;", divId);
+      console.warn("fadeIn fail;", divId);
       return false;
     }
-    console.warn("el", el);
+    gsap.to(`#${divId}`, {
+      opacity: 0,
+      ease: Power1.easeOut,
+      duration,
+      onComplete: () => {
+        return true;
+      },
+    });
   } catch (error) {
     return false;
   }

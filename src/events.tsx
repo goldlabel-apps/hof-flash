@@ -13,7 +13,7 @@ export const initFlash = (clips) => {
 
 export const onWindowResize = (clips) => {
   try {
-    console.warn("onWindowResize", clips);
+    initFlash(clips);
     return true;
   } catch (error) {
     return false;
