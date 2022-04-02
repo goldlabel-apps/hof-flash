@@ -1,6 +1,6 @@
 {
   "name": "@listingslab/flash",
-  "version": "19.6.7",
+  "version": "19.6.8",
   "scripts": {
     "start": "webpack serve --port 1999 --env isLocal",
     "start:standalone": "webpack serve --env standalone",
