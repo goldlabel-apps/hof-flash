@@ -1,4 +1,4 @@
-import { getElement, animateTo } from "./";
+import { getElement, animateTo, setPosition } from "./";
 
 export const spreadOut = (clips) => {
   try {
@@ -11,7 +11,7 @@ export const spreadOut = (clips) => {
     for (let j = 0; j < clips.length; j++) {
       const { id } = clips[j];
       const adjustedTop = 10 + j * 125;
-      animateTo(id, "topmiddle", { left: 0, top: adjustedTop });
+      setPosition(id, "topmiddle", { left: 0, top: adjustedTop });
     }
   } catch (error) {
     return false;
