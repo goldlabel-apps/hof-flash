@@ -2,7 +2,7 @@
 import { gsap, Bounce } from "gsap";
 import { getElement, getSizes } from "./";
 
-const duration = 1.66;
+const duration = 1;
 
 export const animateTo = (divId, position, offset) => {
   try {
@@ -55,7 +55,7 @@ export const animateTo = (divId, position, offset) => {
       x: x + offset.left,
       y: y + offset.top,
       duration,
-      ease: Bounce.easeOut,
+      // ease: Bounce.easeOut,
       onComplete: () => {
         // console.warn(`animate ${divId} to ${position} complete`);
       },

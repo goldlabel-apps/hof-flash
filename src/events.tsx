@@ -6,7 +6,7 @@ export const initFlash = (clips) => {
   remove("ssr");
   for (let i = 0; i < clips.length; i++) {
     const { id } = clips[i];
-    setPosition(id, "centered", { left: 0, top: 0 });
+    setPosition(id, "topmiddle", { left: 0, top: 0 });
     fadeIn(id);
   }
   layout(clips);
