@@ -5,7 +5,8 @@ import { fadeOut } from "./fadeOut";
 import { fadeIn } from "./fadeIn";
 import { getElement } from "./getElement";
 import { setPosition } from "./setPosition";
-import { spreadOut } from "./spreadOut";
+import { getStage } from "./getStage";
+import { layout } from "./layout";
 
 export {
   getElement,
@@ -15,5 +16,6 @@ export {
   fadeOut,
   animateTo,
   remove,
-  spreadOut,
+  getStage,
+  layout,
 };

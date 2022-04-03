@@ -1,4 +1,6 @@
-import { spreadOut, setPosition, fadeIn, remove } from "./";
+// @ts-ignore
+import * as shared from "@listingslab/shared";
+import { layout, setPosition, fadeIn, remove } from "./";
 
 export const initFlash = (clips) => {
   remove("ssr");
@@ -7,13 +9,13 @@ export const initFlash = (clips) => {
     setPosition(id, "centered", { left: 0, top: 0 });
     fadeIn(id);
   }
-  spreadOut(clips);
+  layout(clips);
   return true;
 };
 
 export const onWindowResize = (clips) => {
   try {
-    initFlash(clips);
+    layout(clips);
     return true;
   } catch (error) {
     return false;
