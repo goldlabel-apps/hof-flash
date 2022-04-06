@@ -8,10 +8,6 @@ import { Provider } from "react-redux";
 import { Stage } from "./";
 
 export default function Flash() {
-  // React.useEffect(() => {
-  //   console.warn("Viewer isMounted");
-  // }, []);
-
   const { getDesignTokens } = shared;
   const darkLight = "light";
   const theme = createTheme(getDesignTokens(darkLight));

@@ -5,8 +5,8 @@ import { layout, setPosition, fadeIn, remove } from "./";
 export const initFlash = (clips) => {
   remove("ssr");
   for (let i = 0; i < clips.length; i++) {
-    const { id } = clips[i];
-    setPosition(id, "topmiddle", { left: 0, top: 0 });
+    const { id, position, offset } = clips[i];
+    setPosition(id, position, offset);
     fadeIn(id);
   }
   layout(clips);
