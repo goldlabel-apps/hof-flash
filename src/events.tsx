@@ -6,16 +6,17 @@ export const initFlash = (clips) => {
   remove("ssr");
   for (let i = 0; i < clips.length; i++) {
     const { id, position, offset } = clips[i];
-    setPosition(id, position, offset);
-    fadeIn(id);
+    // setPosition(id, position, offset);
+    // fadeIn(id);
   }
-  layout(clips);
+  // layout(clips);
   return true;
 };
 
 export const onWindowResize = (clips) => {
   try {
-    layout(clips);
+    // layout(clips);
+    console.warn("onWindowResize");
     return true;
   } catch (error) {
     return false;
