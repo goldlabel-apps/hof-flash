@@ -16,7 +16,7 @@ export const initFlash = (clips) => {
 export const onWindowResize = (clips) => {
   try {
     // layout(clips);
-    console.warn("onWindowResize");
+    console.warn("onWindowResize", Date.now());
     return true;
   } catch (error) {
     return false;
